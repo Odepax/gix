@@ -1,0 +1,27 @@
+.Showcase {
+	margin: var(--LARGE-SPACE);
+}
+
+.Showcase__header {
+}
+
+.Showcase__title {
+	margin-left: var(--SMALL-SPACE);
+	margin-bottom: var(--SMALL-SPACE);
+	text-transform: uppercase;
+	letter-spacing: 2pt;
+}
+
+.Showcase__content {
+	background: var(--BACKGROUND);
+	border-radius: 2pt;
+	box-shadow: 0 0 2pt 0 var(--DROP-SHADOW);
+
+	/*max-height: calc(100vh - 2 * var(--LARGE-SPACE));
+	overflow-y: auto;*/
+}
+
+.Showcase__content--far {
+	background: var(--FAR-BACKGROUND);
+	border: 1pt solid var(--BACKGROUND); /* Should reserve borders for interactible elements? */
+}

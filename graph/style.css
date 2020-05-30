@@ -1,0 +1,95 @@
+body {
+	box-sizing: border-box;
+	margin: 0;
+	min-height: 100vh;
+	background-color: #121212;
+	font-family: monospace;
+	font-size: 12pt;
+	color: white;
+}
+
+.graph {
+	height: 100%;
+}
+
+.nodes {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+.connections {
+	width: 100%;
+	height: 100vh; /* QUICK FIX! Sizes in WPF should be more docile... */
+}
+
+.connection {
+	stroke: dodgerblue;
+	stroke-width: 2pt;
+}
+
+.node {
+	position: absolute;
+	display: grid;
+	grid-template-columns: auto-fit auto-fit;
+	grid-template-rows: auto-fit auto-fit;
+	background-color: #2D2D2D;
+	border: 1pt solid black;
+}
+
+.node-label {
+	grid-area: 1 / 1 / 2 / 3;
+	padding: 12pt;
+	font-weight: bold;
+	border-bottom: 1pt dashed black;
+	text-align: center;
+}
+
+.node-inputs {
+	grid-area: 2 / 1 / 3 / 2;
+}
+
+.node-input {
+	position: relative;
+	text-align: left;
+}
+
+.node-input-label {
+	padding: 8pt 12pt;
+}
+
+.node-input-connector {
+	position: absolute;
+	top: calc(50% - 4pt);
+	left: -4pt;
+	width: 8pt;
+	height: 8pt;
+	background-color: black;
+	border: 1pt solid deeppink;
+	border-radius: 50%;
+}
+
+.node-outputs {
+	grid-area: 2 / 2 / 3 / 3;
+	border-left: 1pt dashed black;
+}
+
+.node-output {
+	position: relative;
+	text-align: right;
+}
+
+.node-output-label {
+	padding: 8pt 12pt;
+}
+
+.node-output-connector {
+	position: absolute;
+	top: calc(50% - 4pt);
+	right: -4pt;
+	width: 8pt;
+	height: 8pt;
+	background-color: black;
+	border: 1pt solid springgreen;
+	border-radius: 50%;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Visual Programming Graph</title>
+		<link rel="stylesheet" type="text/css" href="./style.css"/>
+	</head>
+	<body>
+		<gix-graph id="graph"></gix-graph>
+		<script type="text/javascript" src="./ext.js"></script>
+		<script type="text/javascript" src="./graph.js"></script>
+		<script type="text/javascript">
+			graph.addNode(50, 50, new Node(
+				"Constant",
+				undefined,
+				new Set([ new OutputPort("X") ])
+			))
+
+			graph.addNode(50, 150, new Node(
+				"Constant",
+				undefined,
+				new Set([ __o = new OutputPort("X") ])
+			))
+
+			graph.addNode(250, 50, new Node(
+				"Addition",
+				new Set([ __i = new InputPort("A"), new InputPort("B") ]),
+				new Set([ new OutputPort("R") ])
+			))
+
+			graph.addNode(550, 150, new Node(
+				"Addition",
+				new Set([ new InputPort("A"), new InputPort("B") ]),
+				new Set([ new OutputPort("R") ])
+			))
+
+			graph.addConnection(__i, __o)
+
+			// main.on("dblclick", event => {
+			// 	console.log(event)
+			// })
+		</script>
+	</body>
+</html>

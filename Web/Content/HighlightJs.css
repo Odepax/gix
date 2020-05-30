@@ -1,0 +1,76 @@
+/* Based on original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org> */
+
+/* Base  */
+
+.HighlightJs__subst {}
+
+.HighlightJs__comment {
+	color: var(--BROWN-FOREGROUND);
+}
+
+.HighlightJs__keyword,
+.HighlightJs__attribute,
+.HighlightJs__selector-tag,
+.HighlightJs__meta-keyword,
+.HighlightJs__doctag,
+.HighlightJs__name {
+	font-weight: bold;
+	color: var(--BLUE-FOREGROUND);
+}
+
+/* User */
+
+.HighlightJs__string,
+.HighlightJs__number,
+.HighlightJs__selector-id,
+.HighlightJs__selector-class,
+.HighlightJs__quote,
+.HighlightJs__template-tag,
+.HighlightJs__deletion {
+	color: var(--GREEN-FOREGROUND);
+}
+
+.HighlightJs__built_in,
+.HighlightJs__type,
+.HighlightJs__title,
+.HighlightJs__section {
+	color: var(--PINK-FOREGROUND);
+}
+
+.HighlightJs__regexp,
+.HighlightJs__symbol,
+.HighlightJs__variable,
+.HighlightJs__template-variable,
+.HighlightJs__link,
+.HighlightJs__selector-attr,
+.HighlightJs__selector-pseudo {
+	color: var(--GOLD-FOREGROUND);
+}
+
+/* Language */
+
+.HighlightJs__literal {
+}
+
+.HighlightJs__bullet,
+.HighlightJs__code,
+.HighlightJs__addition {
+}
+
+/* Meta */
+
+.HighlightJs__meta {
+}
+
+.HighlightJs__meta-string {
+}
+
+/* Misc Effects */
+
+.HighlightJs__emphasis {
+	font-style: italic;
+}
+
+.HighlightJs__strong {
+	font-weight: bold;
+}

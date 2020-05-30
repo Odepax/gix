@@ -1,0 +1,142 @@
+<example>
+	<gix-counter />
+	<gix-counter value="12" increment="-1" />
+</example>
+
+<template id="gix-counter">
+	<div>
+		<h2> This is the Counter </h2>
+		<p> Lorem countum dolor sit amet, consectetur adipisicing elit. </p>
+
+		<span data--="_ value > textContent"></span>
+		<input data--="_ increment <> value:change" />
+		<button data--="@click: increment"> Increment to <!-- _ nextValue --> </button>
+	</div>
+</template>
+
+<script>
+	import { Gix } from "gix/component.js"
+	import { int, positive } from "gix/validation.js"
+
+	export class GixCounter extends Gix {
+		constructor() {
+			super()
+
+			const value = this.registerStatic("value", positive(int()), 0)
+			const increment = this.registerStatic("increment", positive(int()), +1)
+
+			this.registerDynamic("nextValue", [ value, increment ], ({ value, increment }) => value + increment)
+		}
+
+		increment() {
+			this._.value += this._.increment
+		}
+	}
+</script>
+
+<!-- ========================================================================================== -->
+
+<style>
+	.red { color: red; }
+</style>
+
+<template id="the-input">
+	<label for="theValueInput">Input:</label>
+	<input id="theValueInput" type="text" data-gix=" $theInput ; @click theMethod ; %value = theValue " /> -- One time.
+	<input id="theValueInput" type="text" data-gix=" $theInput ; @click theMethod ; %value : theValue " /> -- One way.
+	<input id="theValueInput" type="text" data-gix=" $theInput ; @click theMethod ; %value change: theValue " /> -- The other way.
+	<input id="theValueInput" type="text" data-gix=" $theInput ; @click theMethod ; %value :change: theValue " /> -- Two way.
+	<input id="theValueInput" type="text" />
+		<!--^ $theInput ^-->
+		<!--^ @click theMethod ^-->
+		<!--^ %value :change: theValue ^-->
+	<code>data-gix</code> is evaluated @runtime, but those ^comments get converted @buildtime.
+
+	<label for="theTrasformCheckbox">Transform:</label>
+	<input id="theTrasformCheckbox" type="checkbox" checked data-gix=" %checked :change: theTransform " />
+
+	<p data-gix=" .red hasNoValue ">Output: <!--< %theTransformedValue >--></p>
+</template>
+
+<example>
+	<the-input />
+	<the-input theValue="Ah... The negociator!" theTransform="true" />
+</example>
+
+<script>
+	class TheInput extends Gix {
+		constructor() {
+			super({
+				theValue: "Hellow, there!"
+			})
+
+			console.log(this._.theValue)
+			console.log(this._.theTransform)
+			console.log(this._.theTransformedValue)
+
+			console.log(this.$.theInput)
+		}
+
+		theTransformedValue(theValue, theTransform) {
+			return theTransform
+				? theValue.toUpperCase()
+				: theValue
+		}
+
+		hasNoValue(theValue) {
+			return theValue.trim().length == 0
+		}
+
+		theMethod(event) {
+			console.log(event)
+		}
+	}
+</script>
+
+Or this, generating getters, sertters and events ala INotifyPropertyChanged @buildtime?
+... Depends on how the attributes are handled...
+
+<var name="value" type="string" default="Hellow, there!" />
+<var name="transform" type="bool" default="false" />
+
+<val name="transformedValue" type="string" deps="value, transform">
+	<script>
+		return transform ? value.toUpperCase() : value
+	</script>
+</val>
+
+<val name="embelishedValue" type="string" deps="transformedValue">
+	<script>
+		return `<THE> ${ transformedValue } <VALUE>` // Will pwsh handle those chevrons correctly?
+	</script>
+</val>
+
+<!-- ========================================================================================== -->
+
+<main>
+	<p>Type an message in the input:</p>
+	<input type="text" value="Hello?"/>
+		<!-- GIX BIND (value) TO (message) DYNAMIC (to source) TRIGGER (keyup) -->
+
+	<p>And then display in the paragraph:</p>
+	<p>
+		<!-- GIX BIND (textContent) TO (message) DYNAMIC (to view) -->
+		<!-- GIX BIND (className) TO (hasMessage) DYNAMIC (to view) -->
+	</p>
+</main>
+
+<script type="text/javascript">
+	for (let commentNode = null, i = document.createNodeIterator(
+		document.body,
+		NodeFilter.SHOW_COMMENT, {
+		acceptNode(node) {
+			return node.textContent.startsWith(" GIX") ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT
+		}
+	}); commentNode = i.nextNode();) {
+		const commandText = commentNode.textContent // TODO: parse and execute
+		const commandTarget = commentNode.previousElementSibling || commentNode.parentElement
+
+		// Apparently, this method is quite slow?
+		// TODO: rm node (how does the iterator react?)
+	}
+</script>

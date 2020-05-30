@@ -1,0 +1,258 @@
+.AutoSemantic > * {
+	margin: 0 auto;
+	padding: 0 var(--SMALL-SPACE);
+	max-width: calc(360pt + 2 * var(--SMALL-SPACE));
+	text-align: justify;
+}
+
+.AutoSemantic__verticalOverflow {
+	max-width: unset;
+	overflow-x: auto;
+}
+
+.AutoSemantic__verticalOverflow > * {
+	margin: 0 auto;
+}
+
+.AutoSemantic h1 {
+	margin-top: var(--LARGE-SPACE);
+	font-size: var(--EXTRA-FONT);
+}
+
+.AutoSemantic h2 {
+	margin-top: var(--MEDIUM-SPACE);
+	font-size: var(--LARGE-FONT);
+}
+
+.AutoSemantic h3 {
+	margin-top: var(--SMALL-SPACE);
+	font-size: var(--MEDIUM-FONT);
+}
+
+.AutoSemantic hgroup :not(:first-child) {
+	margin-top: var(--TINY-SPACE);
+}
+
+.AutoSemantic p {
+	margin-top: var(--SMALL-SPACE);
+}
+
+.AutoSemantic i {
+	font-style: italic;
+}
+
+.AutoSemantic b {
+	font-weight: bold;
+}
+
+.AutoSemantic em {
+	font-style: italic;
+	font-size: 1.1em;
+	text-shadow: 0 0 2pt var(--DROP-SHADOW);
+}
+
+.AutoSemantic strong {
+	font-weight: bold;
+	font-size: 1.2em;
+	text-shadow: 0 0 2pt var(--DROP-SHADOW);
+}
+
+.AutoSemantic a {
+	color: var(--BLUE-FOREGROUND);
+}
+
+.AutoSemantic a:hover {
+	border-bottom: 1pt solid var(--BLUE-FOREGROUND);
+}
+
+.AutoSemantic a:focus {
+	outline: 1.5pt solid var(--FOREGROUND);
+	outline-offset: var(--PICO-SPACE);
+}
+
+.AutoSemantic a:visited {
+	color: var(--PINK-FOREGROUND);
+}
+
+.AutoSemantic a[href^="mailto"]::before {
+	content: "📧";
+}
+
+.AutoSemantic a[href^="tel"]::before {
+	content: "📞";
+}
+
+.AutoSemantic a[download]::before {
+	content: "📁";
+}
+
+.AutoSemantic a[target="_blank"]::before {
+	content: "🡕";
+}
+
+.AutoSemantic a[href^="http"]::after {
+	content: "";
+}
+
+.AutoSemantic a[href^="#"]::after {
+	content: "📑";
+}
+
+.AutoSemantic a[rel="external"]::after {
+	content: "🌐";
+}
+
+.AutoSemantic a[rel="help"]::after {
+	content: "🛈";
+}
+
+.AutoSemantic a[rel="license"]::after {
+	content: "☞";
+}
+
+.AutoSemantic a[rel="prev"]::after {
+	content: "⎗";
+}
+
+.AutoSemantic a[rel="next"]::after {
+	content: "⎘";
+}
+
+.AutoSemantic kbd {
+	display: inline-block;
+	padding: 0 0.6em;
+	background: var(--BACKGROUND);
+	border-radius: 2pt;
+	box-shadow: 0 0 2pt 0 var(--DROP-SHADOW);
+	font-family: var(--MONOSPACE-FONT);
+}
+
+.AutoSemantic code {
+	font-family: var(--MONOSPACE-FONT);
+}
+
+.AutoSemantic pre {
+	margin-top: var(--SMALL-SPACE);
+}
+
+.AutoSemantic__verticalOverflow > pre {
+	display: table;
+	min-width: 360pt;
+}
+
+.AutoSemantic__verticalOverflow > table {
+	min-width: 360pt;
+}
+
+.AutoSemantic table {
+	margin-top: var(--SMALL-SPACE);
+
+	box-shadow: 0 0 2pt 0 var(--DROP-SHADOW);
+	border-collapse: collapse;
+}
+
+.AutoSemantic caption {
+	margin-bottom: var(--TINY-SPACE);
+}
+
+.AutoSemantic thead {
+}
+
+.AutoSemantic tfoot {
+}
+
+.AutoSemantic tbody {
+}
+
+.AutoSemantic tr {
+}
+
+.AutoSemantic th {
+	padding: var(--TINY-SPACE);
+	border: 1.5pt solid var(--FRONT-BACKGROUND);
+	background: var(--BACKGROUND);
+	font-weight: bold;
+}
+
+.AutoSemantic td {
+	padding: var(--TINY-SPACE);
+	border: 1.5pt solid var(--FRONT-BACKGROUND);
+}
+
+.AutoSemantic__table--compact th,
+.AutoSemantic__table--compact td {
+	padding: var(--PICO-SPACE) var(--TINY-SPACE);
+}
+
+.AutoSemantic__verticalOverflow img {
+	min-width: 360pt;
+}
+
+.AutoSemantic img {
+	display: block;
+	margin: 0 auto;
+	margin-top: var(--SMALL-SPACE);
+	max-width: 100%;
+	box-shadow: 0 0 2pt 0 var(--DROP-SHADOW);
+	border-radius: 2pt;
+}
+
+.AutoSemantic figure {
+	margin-top: var(--SMALL-SPACE);
+}
+
+.AutoSemantic figure img {
+	margin-top: unset;
+}
+
+.AutoSemantic figcaption {
+	margin-bottom: var(--TINY-SPACE);
+	text-align: center;
+}
+
+.AutoSemantic ul,
+.AutoSemantic ol {
+	margin-top: var(--SMALL-SPACE);
+}
+
+.AutoSemantic li {
+	margin-left: 1.2em;
+}
+
+.AutoSemantic ol > li {
+	margin-left: 1.3em;
+}
+
+.AutoSemantic li ul,
+.AutoSemantic li ol {
+	margin-top: unset;
+}
+
+.AutoSemantic q {
+	font-style: italic;
+}
+
+.AutoSemantic blockquote > *:first-child::before,
+.AutoSemantic q::before {
+	content: "\0000AB  ";
+}
+
+.AutoSemantic blockquote > *:nth-last-child(2)::after,
+.AutoSemantic q::after {
+	content: " \0000BB";
+}
+
+.AutoSemantic blockquote {
+	margin-top: var(--SMALL-SPACE);
+	font-style: italic;
+}
+
+.AutoSemantic blockquote > footer {
+	margin-top: var(--TINY-SPACE);
+	margin-left: 1.2em;
+	font-style: initial;
+}
+
+.AutoSemantic blockquote > footer::before {
+	content: "\2014 ";
+}

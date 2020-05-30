@@ -1,0 +1,102 @@
+@import "./App/Showcase.css";
+/*@import "./App/Logo.css";*/
+
+/*@import "./Content/Jumbotron.css";*/
+@import "./Content/AutoSemantic.css";
+@import "./Content/HighlightJs.css";
+
+.Theme--dark {
+	--FOREGROUND: #fefaec;
+
+	--LINE: #a38e75;
+
+	--FRONT-BACKGROUND: #474649;
+	--BACKGROUND: #302e33;
+	--FAR-BACKGROUND: #1f1c21;
+
+	--DROP-SHADOW: #000000;
+
+	--BROWN-FOREGROUND: #e7c398; /* TODO: Make them more colorful. */
+	--PINK-FOREGROUND: #fb91b4;
+	--GOLD-FOREGROUND: #fedf89;
+	--GREEN-FOREGROUND: #d5fc9f;
+	--BLUE-FOREGROUND: #9de6fb;
+}
+
+:root {
+	--FOREGROUND: #1f1c21;
+
+	--LINE: #a38e75;
+
+	--FRONT-BACKGROUND: #fefaec;
+	--BACKGROUND: #f6ebc6;
+	--FAR-BACKGROUND: #f0e0b2;
+
+	--DROP-SHADOW: rgba(0, 0, 0, 0.2);
+
+	--PINK: #ef175e;
+	--GOLD: #fdbe11;
+	--GREEN: #95ea1c;
+	--BLUE: #32c0ea;
+
+	--BROWN-FOREGROUND: #7a501f; /* TODO: Make them more colorful. */
+	--PINK-FOREGROUND: #86052f;
+	--GOLD-FOREGROUND: #866201;
+	--GREEN-FOREGROUND: #4e8205;
+	--BLUE-FOREGROUND: #066a87;
+
+	--LARGE-SPACE: 64pt;
+	--MEDIUM-SPACE: 32pt;
+	--SMALL-SPACE: 16pt;
+	--TINY-SPACE: 8pt;
+	--PICO-SPACE: 4pt;
+
+	--WOARGH-FONT: 48pt;
+	--EXTRA-FONT: 32pt;
+	--LARGE-FONT: 24pt;
+	--MEDIUM-FONT: 16pt;
+	--SMALL-FONT: 12pt;
+	--TINY-FONT: 8pt;
+
+	--SANS-FONT: sans-serif;
+	--MONOSPACE-FONT: monospace;
+}
+
+/*
+.accent-pink {}
+.accent-green {}
+.accent-blue {}
+.accent-gold {}
+*/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	line-height: calc(1em + var(--TINY-SPACE));
+	text-size-adjust: 100%;
+	tab-size: 4;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: inherit;
+	text-transform: inherit;
+	letter-spacing: inherit;
+	color: inherit;
+}
+
+body {
+	min-height: 100vh;
+	background: var(--FAR-BACKGROUND);
+	font-family: var(--SANS-FONT);
+	font-weight: normal;
+	font-style: normal;
+	font-size: var(--SMALL-FONT);
+	color: var(--FOREGROUND);
+}
+
+/* ==== */
+
+.AutoSemantic {
+	padding: var(--LARGE-SPACE) 0;
+}

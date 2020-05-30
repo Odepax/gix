@@ -1,0 +1,37 @@
+
+#ClickToAction()
+	@hover
+	@focus
+	@pressed
+	@disabled
+	--border
+	--ghost
+	--elevated
+
+#ClickToNavigate()
+	@hover
+	@focus
+	@pressed
+	@current
+	@disabled
+	--border
+	--block = !ghost
+	--elevated
+
+#ClickToEdit()
+	@hover
+	@focus = @editing
+	@disabled
+	--border
+	--ghost
+	--elevated
+
+#ClickToToggle()
+	@hover
+	@focus
+	@pressed
+	@toggled
+	@disabled
+	--border
+	--ghost
+	--elevated

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Contrast Ratio over Color Matrix</title>
+		<style type="text/css">
+			body {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: 0;
+				min-height: 100vh;
+				background-color: black;
+				font-family: sans-serif;
+				font-size: 12pt;
+			}
+
+			main {
+				padding: 16pt;
+				background-color: white;
+				border: 1pt solid silver;
+			}
+
+			td {
+				text-align: center;
+				padding: 16pt;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<table>
+				<tbody id="colorMatrix"></tbody>
+				<tfoot>
+					<tr id="colorInputs"></tr>
+				</tfoot>
+			</table>
+			<button id="newColorButton">+</button>
+		</main>
+		<script type="text/javascript">
+			newColorButton.addEventListener("click", newColorInput, false)
+
+
+			newColorInput("#1f1c21")
+			newColorInput("#302e33")
+			newColorInput("#474649")
+
+			newColorInput("#a38e75")
+
+			newColorInput("#fefaec")
+			newColorInput("#f6ebc6")
+			newColorInput("#f0e0b2")
+
+			newColorInput("#ef175e")
+			newColorInput("#fdbe11")
+			newColorInput("#95ea1c")
+			newColorInput("#32c0ea")
+
+			function newColorInput(value = null) {
+				const th = document.createElement("th")
+				const input = document.createElement("input")
+				const moveLeftButton = document.createElement("button")
+				const moveRightButton = document.createElement("button")
+				const br = document.createElement("br")
+				const luminanceSpan = document.createElement("luminanceSpan")
+
+				input.type = "color"
+				input.value = value
+				input.addEventListener("input", () => {
+					updateContrastMatrix()
+					luminanceSpan.textContent = Math.round(getRelativeLuminance(input.value) * 100)
+				}, false)
+				input.addEventListener("mousedown", ({ button }) => {
+					if (button == 1) { // Middle mouse button.
+						colorInputs.removeChild(th)
+						updateContrastMatrix()
+					}
+				}, false)
+
+				moveLeftButton.textContent = "<"
+				moveLeftButton.addEventListener("click", () => {
+					if (th.previousElementSibling) {
+						colorInputs.insertBefore(th, th.previousElementSibling)
+						updateContrastMatrix()
+					}
+				}, false)
+
+				moveRightButton.textContent = ">"
+				moveRightButton.addEventListener("click", () => {
+					if (th.nextElementSibling?.nextElementSibling)
+						colorInputs.insertBefore(th, th.nextElementSibling.nextElementSibling)
+					else
+						colorInputs.appendChild(th)
+
+					updateContrastMatrix()
+				}, false)
+
+				luminanceSpan.textContent = Math.round(getRelativeLuminance(input.value) * 100)
+
+				colorInputs.appendChild(th)
+				th.appendChild(moveLeftButton)
+				th.appendChild(input)
+				th.appendChild(moveRightButton)
+				th.appendChild(br)
+				th.appendChild(luminanceSpan)
+
+				updateContrastMatrix()
+			}
+
+			function updateContrastMatrix() {
+				colorMatrix.innerHTML = null
+
+				const colors = colorInputs.querySelectorAll("input[type='color']")
+
+				for (const { value: textColor } of colors){
+					const tr = document.createElement("tr")
+
+					for (const { value: backgroundColor } of colors) {
+						const td = document.createElement("td")
+
+						const contrastRatio = getContrastRatio(textColor, backgroundColor)
+						const contrastLabel = contrastRatio < 4.5 ? "FAIL" : contrastRatio < 7 ? "AA" : "AAA"
+
+						td.textContent = `${ contrastLabel }: ${ Math.round((contrastRatio) * 100) / 100 }`
+						td.style.color = textColor
+						td.style.backgroundColor = backgroundColor
+
+						if (contrastRatio < 4.5) {
+							td.style.outline = "1pt solid red"
+							td.style.outlineOffset = "-10pt"
+						}
+
+						tr.appendChild(td)
+					}
+
+					colorMatrix.appendChild(tr)
+				}
+			}
+
+			function getContrastRatio(textColor, backgroundColor) {
+				const textLuminance = getRelativeLuminance(textColor)
+				const backgroundLuminance = getRelativeLuminance(backgroundColor)
+
+				return (Math.max(textLuminance, backgroundLuminance) + 0.05) / (Math.min(textLuminance, backgroundLuminance) + 0.05)
+			}
+
+			function getRelativeLuminance(color) {
+				return 0.2126 * getR(color) + 0.7152 * getG(color) + 0.0722 * getB(color)
+			}
+
+			function getR(color) {
+				const r = parseInt(color.substring(1, 1 + 2), 16) / 255
+
+				if (r <= 0.03928)
+					return r / 12.92
+				else
+					return Math.pow((r + 0.055) / 1.055, 2.4)
+			}
+
+			function getG(color) {
+				const g = parseInt(color.substring(3, 3 + 2), 16) / 255
+
+				if (g <= 0.03928)
+					return g / 12.92
+				else
+					return Math.pow((g + 0.055) / 1.055, 2.4)
+			}
+
+			function getB(color) {
+				const b = parseInt(color.substring(5, 5 + 2), 16) / 255
+
+				if (b <= 0.03928)
+					return b / 12.92
+				else
+					return Math.pow((b + 0.055) / 1.055, 2.4)
+			}
+		</script>
+	</body>
+</html>
