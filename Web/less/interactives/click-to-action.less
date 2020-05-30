@@ -1,0 +1,79 @@
+@import "./focus-target";
+@import "../blocks/front";
+
+#interactives() {
+	.click-to-action() {
+		#interactives.focus-target();
+		#blocks.front();
+
+		& {
+			min-width: 80pt;
+			padding: var(--PICO-SPACE) var(--TINY-SPACE);
+			border: none;
+			text-align: center;
+			cursor: pointer;
+		}
+
+		&:hover:not(:disabled) {
+			background: var(--INVERTED-FRONT-BACKGROUND);
+			color: var(--INVERTED-FOREGROUND);
+		}
+
+		&:active:not(:disabled) {
+			background: var(--INVERTED-FAR-BACKGROUND);
+			color: var(--INVERTED-FOREGROUND);
+		}
+
+		&:disabled {
+			color: var(--LINE);
+			cursor: not-allowed;
+		}
+
+		&--ghost,
+		&--border,
+		&--elevated {
+			& {
+				background: unset;
+				box-shadow: unset;
+			}
+
+			&:hover:not(:disabled) {
+				background: var(--FRONT-BACKGROUND);
+				color: unset;
+			}
+
+			&:active:not(:disabled) {
+				background: var(--FAR-BACKGROUND);
+				color: unset;
+			}
+		}
+
+		&--border {
+			& {
+				border: 1pt solid var(--LINE);
+			}
+
+			&:hover:not(:disabled) {
+				border-color: var(--INVERTED-FRONT-BACKGROUND);
+			}
+
+			&:active:not(:disabled) {
+				border-color: var(--INVERTED-FAR-BACKGROUND);
+			}
+		}
+
+		&--elevated {
+			& {
+				background: var(--ELEVATED);
+			}
+
+			&:hover:not(:disabled) {
+				background: var(--ELEVATED-HOVER);
+			}
+
+			&:active:not(:disabled) {
+				background: var(--ELEVATED-ACTIVE);
+			}
+		}
+	}
+}

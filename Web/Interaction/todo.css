@@ -1,12 +1,5 @@
 
-#ClickToAction()
-	@hover
-	@focus
-	@pressed
-	@disabled
-	--border
-	--ghost
-	--elevated
+
 
 #ClickToNavigate()
 	@hover

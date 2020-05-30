@@ -5,16 +5,26 @@
 @import "./Content/AutoSemantic.css";
 @import "./Content/HighlightJs.css";
 
+/* LESS output. */
+@import "./css/css.css";
+
 .Theme--dark {
 	--FOREGROUND: #fefaec;
-
-	--LINE: #a38e75;
-
 	--FRONT-BACKGROUND: #474649;
 	--BACKGROUND: #302e33;
 	--FAR-BACKGROUND: #1f1c21;
 
+	--INVERTED-FOREGROUND: #1f1c21;
+	--INVERTED-FRONT-BACKGROUND: #fefaec;
+	--INVERTED-BACKGROUND: #f6ebc6;
+	--INVERTED-FAR-BACKGROUND: #f0e0b2;
+
+	--LINE: #a38e75;
 	--DROP-SHADOW: #000000;
+
+	--ELEVATED: rgba(0, 0, 0, 0.6);
+	--ELEVATED-HOVER: rgba(0, 0, 0, 0.8);
+	--ELEVATED-ACTIVE: rgba(0, 0, 0, 1.0);
 
 	--BROWN-FOREGROUND: #e7c398; /* TODO: Make them more colorful. */
 	--PINK-FOREGROUND: #fb91b4;
@@ -25,14 +35,21 @@
 
 :root {
 	--FOREGROUND: #1f1c21;
-
-	--LINE: #a38e75;
-
 	--FRONT-BACKGROUND: #fefaec;
 	--BACKGROUND: #f6ebc6;
 	--FAR-BACKGROUND: #f0e0b2;
 
+	--INVERTED-FOREGROUND: #fefaec;
+	--INVERTED-FRONT-BACKGROUND: #474649;
+	--INVERTED-BACKGROUND: #302e33;
+	--INVERTED-FAR-BACKGROUND: #1f1c21;
+
+	--LINE: #a38e75;
 	--DROP-SHADOW: rgba(0, 0, 0, 0.2);
+
+	--ELEVATED: rgba(255, 255, 255, 0.6);
+	--ELEVATED-HOVER: rgba(255, 255, 255, 0.8);
+	--ELEVATED-ACTIVE: rgba(255, 255, 255, 1.0);
 
 	--PINK: #ef175e;
 	--GOLD: #fdbe11;

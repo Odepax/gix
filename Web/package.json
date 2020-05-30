@@ -1,0 +1,18 @@
+{
+	"private": true,
+	"name": "gix",
+	"version": "0.1.0",
+	"description": "My UI framework.",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/odepax/gix"
+	},
+	"keywords": [
+		"ui"
+	],
+	"author": "Odepax",
+	"license": "SEE LICENSE IN ../LICENSE.md",
+	"dev-dependencies": {
+		"less": "^3.11.1"
+	}
+}
