@@ -14,65 +14,39 @@
 			cursor: pointer;
 		}
 
-		&:hover:not(:disabled) {
-			background: var(--INVERTED-FRONT-BACKGROUND);
-			color: var(--INVERTED-FOREGROUND);
+		&:hover {
+			box-shadow: @BASE-SHADOW, inset 0 0 0 1pt var(--INVERTED-FRONT-BACKGROUND);
 		}
 
-		&:active:not(:disabled) {
-			background: var(--INVERTED-FAR-BACKGROUND);
-			color: var(--INVERTED-FOREGROUND);
+		&:active {
+			background-color: var(--FAR-BACKGROUND);
 		}
 
 		&:disabled {
+			background-image: repeating-linear-gradient(-45deg, var(--BACKGROUND) 0 1.4pt, var(--FAR-BACKGROUND) 1.6pt 3.2pt);
+			box-shadow: @BASE-SHADOW, inset 0 0 0 1pt var(--FRONT-BACKGROUND);
 			color: var(--LINE);
 			cursor: not-allowed;
 		}
 
-		&--ghost,
-		&--border,
-		&--elevated {
+		&--ghost {
 			& {
-				background: unset;
+				background-color: var(--BACKGROUND);
+				box-shadow: inset 0 0 0 1pt var(--FRONT-BACKGROUND);
+			}
+
+			&:hover {
+				background-color: var(--FRONT-BACKGROUND);
 				box-shadow: unset;
 			}
 
-			&:hover:not(:disabled) {
-				background: var(--FRONT-BACKGROUND);
-				color: unset;
+			&:active {
+				background-color: var(--FAR-BACKGROUND);
+				box-shadow: unset;
 			}
 
-			&:active:not(:disabled) {
-				background: var(--FAR-BACKGROUND);
-				color: unset;
-			}
-		}
-
-		&--border {
-			& {
-				border: 1pt solid var(--LINE);
-			}
-
-			&:hover:not(:disabled) {
-				border-color: var(--INVERTED-FRONT-BACKGROUND);
-			}
-
-			&:active:not(:disabled) {
-				border-color: var(--INVERTED-FAR-BACKGROUND);
-			}
-		}
-
-		&--elevated {
-			& {
-				background: var(--ELEVATED);
-			}
-
-			&:hover:not(:disabled) {
-				background: var(--ELEVATED-HOVER);
-			}
-
-			&:active:not(:disabled) {
-				background: var(--ELEVATED-ACTIVE);
+			&:disabled {
+				box-shadow: unset;
 			}
 		}
 	}

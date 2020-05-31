@@ -1,7 +1,9 @@
 #blocks() {
 	.front() {
-		background: var(--FRONT-BACKGROUND);
+		@BASE-SHADOW: 0 0 2pt 0 var(--DROP-SHADOW);
+
+		background-color: var(--FRONT-BACKGROUND);
 		border-radius: 2pt;
-		box-shadow: 0 0 2pt 0 var(--DROP-SHADOW);
+		box-shadow: @BASE-SHADOW;
 	}
 }
