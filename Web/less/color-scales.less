@@ -1,0 +1,82 @@
+#colors() {
+	.ld-scale-4(@name, @color) {
+		--@{name}-L4: lighten(@color, 16%);
+		--@{name}-L3: lighten(@color, 12%);
+		--@{name}-L2: lighten(@color,  8%);
+		--@{name}-L1: lighten(@color,  4%);
+		--@{name}: @color;
+		--@{name}-D1: darken(@color,  4%);
+		--@{name}-D2: darken(@color,  8%);
+		--@{name}-D3: darken(@color, 12%);
+		--@{name}-D4: darken(@color, 16%);
+
+		@k: ~"@{name}-L4";
+		@@k: #000;
+		@k: ~"@{name}-L3";
+		@@k: #000;
+		@k: ~"@{name}-L2";
+		@@k: #000;
+		@k: ~"@{name}-L1";
+		@@k: #000;
+		// @@name: var(--@{name});
+		// @{"@{name}-D1"}: var(--@{name}-D1);
+		// @{"@{name}-D2"}: var(--@{name}-D2);
+		// @{"@{name}-D3"}: var(--@{name}-D3);
+		// @{"@{name}-D4"}: var(--@{name}-D4);
+	}
+}
+
+@FOREGROUND: var(--FOREGROUND);
+@BACKGROUND: var(--BACKGROUND);
+@DECORATION: var(--DECORATION);
+
+@MEGA-FONT: var(--MEGA-FONT);
+@KILO-FONT: var(--KILO-FONT);
+@HECTO-FONT: var(--HECTO-FONT);
+@DECA-FONT: var(--DECA-FONT);
+@FONT: var(--FONT);
+@DECI-FONT: var(--DECI-FONT);
+@CENTI-FONT: var(--CENTI-FONT);
+@MILLI-FONT: var(--MILLI-FONT);
+
+@MEGA-SPACE: var(--MEGA-SPACE);
+@KILO-SPACE: var(--KILO-SPACE);
+@HECTO-SPACE: var(--HECTO-SPACE);
+@DECA-SPACE: var(--DECA-SPACE);
+@SPACE: var(--SPACE);
+@DECI-SPACE: var(--DECI-SPACE);
+@CENTI-SPACE: var(--CENTI-SPACE);
+@MILLI-SPACE: var(--MILLI-SPACE);
+@MICRO-SPACE: var(--MICRO-SPACE);
+
+* {
+	padding: @SPACE;
+	background: @BACKGROUND;
+}
+
+:root {
+
+	#colors.ld-scale-4(FOREGROUND, #f6ebc6);
+	#colors.ld-scale-4(BACKGROUND, #302e33);
+	#colors.ld-scale-4(DECORATION, #a38e75);
+
+	--MEGA-FONT: 48pt;
+	--KILO-FONT: 32pt;
+	--HECTO-FONT: 24pt;
+	--DECA-FONT: 16pt;
+	--FONT: 12pt;
+	--DECI-FONT: 10pt;
+	--CENTI-FONT: 8pt;
+	--MILLI-FONT: 6pt;
+
+	--MEGA-SPACE: 128pt;
+	--KILO-SPACE: 64pt;
+	--HECTO-SPACE: 32pt;
+	--DECA-SPACE: 24pt;
+	--SPACE: 16pt;
+	--DECI-SPACE: 12pt;
+	--CENTI-SPACE: 8pt;
+	--MILLI-SPACE: 4pt;
+	--MICRO-SPACE: 2pt;
+
+}
