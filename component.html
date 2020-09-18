@@ -140,3 +140,41 @@ Or this, generating getters, sertters and events ala INotifyPropertyChanged @bui
 		// TODO: rm node (how does the iterator react?)
 	}
 </script>
+
+<!-- ========================================================================================== -->
+
+<template>
+	<div class="form-info"></div>
+	<!-- GIX BIND (textContent) TO (message) MODE (static) TRANSFORM (convertMarkdown) -->
+	<input type="text"/>
+	<!-- GIX BIND (value) TO (username) MODE (to source) TRIGGER (change) TRANSFORM (trim) -->
+	<button>Log In</button>
+	<!-- GIX BIND (disable) TO (usernameIsValid) MODE (to ui) TRANSFORM (not) -->
+</template>
+<script>
+	class UserForm extends GixElement {
+		constructor() {
+			super()
+			this.message = Gix.value()
+			this.username = Gix.value()
+			this.usernameIsValid = Gix.value([ this.username ], ({ username }) =>
+				0 < username.length && /[a-zA-Z]/.test(username)
+			)
+			this.usernameIsValid.onChange(usernameIsValid => {
+				this.$.loginButton.disable = this.not(usernameIsValid)
+			})
+			this.$.usernameInput.addEventListener("change", event => {
+				this.username.value = this.trim(event.target.value)
+			})
+		}
+		convertMarkdown(value) {
+			// ...
+		}
+		trim(value) {
+			return value.trim()
+		}
+		not(value) {
+			return !value
+		}
+	}
+</script>

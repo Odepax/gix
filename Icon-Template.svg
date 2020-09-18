@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="320pt" height="320pt" viewBox="0 0 112.888892079 112.888887987" version="1.1" id="svg8" inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)" sodipodi:docname="Icon-Template.svg">
+<defs id="defs2">
+<linearGradient inkscape:collect="always" id="linearGradient1684">
+<stop style="stop-color:#302e33;stop-opacity:1" offset="0" id="stop1680" />
+<stop style="stop-color:#1f1c21;stop-opacity:1" offset="1" id="stop1682" />
+</linearGradient>
+<linearGradient inkscape:collect="always" id="linearGradient1442">
+<stop style="stop-color:#fdbe11;stop-opacity:1" offset="0" id="stop1438" />
+<stop style="stop-color:#ef175e;stop-opacity:1" offset="1" id="stop1440" />
+</linearGradient>
+<linearGradient inkscape:collect="always" xlink:href="#linearGradient1442" id="linearGradient1674" gradientUnits="userSpaceOnUse" x1="19.4733352661" y1="184.144714355" x2="97.3666687012" y2="296.751373291" />
+<linearGradient inkscape:collect="always" xlink:href="#linearGradient1684" id="linearGradient1786" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.20198519686,0,0,1.20198519686,-27.4429938282,-45.353928342)" x1="51.3418693542" y1="223.218383789" x2="88.8661346436" y2="253.021057129" />
+<linearGradient inkscape:collect="always" xlink:href="#linearGradient1442" id="linearGradient1846" gradientUnits="userSpaceOnUse" gradientTransform="matrix(3.77952743064,0,0,1.89165335818,8.44790193357e-8,-693.414724008)" x1="19.4733352661" y1="184.144714355" x2="97.3666687012" y2="296.751373291" />
+</defs>
+<sodipodi:namedview id="base" pagecolor="#000000" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:zoom="0.32768" inkscape:cx="492.761228214" inkscape:cy="534.3286696" inkscape:document-units="pt" inkscape:current-layer="layer1" showgrid="false" units="pt" inkscape:snap-bbox="true" inkscape:bbox-nodes="true" inkscape:snap-page="false" />
+<metadata id="metadata5">
+<rdf:RDF>
+<cc:Work rdf:about="">
+<dc:format>image/svg+xml</dc:format>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+<dc:title></dc:title>
+</cc:Work>
+</rdf:RDF>
+</metadata>
+<g inkscape:groupmode="layer" id="layer2" inkscape:label="Preview" sodipodi:insensitive="true">
+<rect style="fill:#ffffff;stroke-width:0.1763889045;stroke-linejoin:round;paint-order:markers fill stroke" id="rect1436" width="5886.14355469" height="5670.24707031" x="388.6199646" y="-2775.12573242" />
+<text xml:space="preserve" style="font-size:4.2333335876px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;fill:#ff0101;stroke-width:0.1763889045;stroke-linejoin:round;paint-order:markers fill stroke" x="141.049102783" y="-67.7650375366" id="text845"><tspan sodipodi:role="line" id="tspan843" x="141.049102783" y="-67.7650375366">WINDOWS</tspan></text>
+<text xml:space="preserve" style="font-size:4.2333335876px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;fill:#ff0101;stroke-width:0.1763889045;stroke-linejoin:round;paint-order:markers fill stroke" x="140.801055908" y="-61.1697463989" id="text849"><tspan sodipodi:role="line" id="tspan847" x="140.801055908" y="-61.1697463989">OSX</tspan></text>
+<text xml:space="preserve" style="font-size:4.2333335876px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;fill:#ff0101;stroke-width:0.1763889045;stroke-linejoin:round;paint-order:markers fill stroke" x="140.739044189" y="-54.6054611206" id="text853"><tspan sodipodi:role="line" id="tspan851" x="140.739044189" y="-54.6054611206">LINUX</tspan></text>
+<text xml:space="preserve" style="font-size:4.2333335876px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;fill:#ffffff;stroke-width:0.1763889045;stroke-linejoin:round;paint-order:markers fill stroke" x="-0.3720703125" y="-3.55878376961" id="text857"><tspan sodipodi:role="line" id="tspan855" x="-0.3720703125" y="-3.55878376961">EXPORT</tspan></text>
+<text xml:space="preserve" style="font-size:4.2333335876px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;fill:#ff0101;stroke-width:0.1763889045;stroke-linejoin:round;paint-order:markers fill stroke" x="140.739044189" y="-48.0101699829" id="text861"><tspan sodipodi:role="line" id="tspan859" x="140.739044189" y="-48.0101699829">IOS</tspan></text>
+<text xml:space="preserve" style="font-size:4.2333335876px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;fill:#ff0101;stroke-width:0.1763889045;stroke-linejoin:round;paint-order:markers fill stroke" x="141.028427124" y="-41.4148750305" id="text865"><tspan sodipodi:role="line" id="tspan863" x="141.028427124" y="-41.4148750305">ANDROID</tspan></text>
+<text xml:space="preserve" style="font-size:4.2333335876px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;fill:#ff0101;stroke-width:0.1763889045;stroke-linejoin:round;paint-order:markers fill stroke" x="140.739044189" y="-34.8195838928" id="text869"><tspan sodipodi:role="line" id="tspan867" x="140.739044189" y="-34.8195838928">BROWSER</tspan></text>
+<rect style="fill:#808080;stroke-width:0.1763889045;stroke-linejoin:round;paint-order:markers fill stroke" id="rect931" width="112.888893127" height="112.888893127" x="2.23517417908e-08" y="-147.706375122" />
+<g id="g1207" transform="translate(-69.5909714971,62.7861263063)">
+<rect y="-62.7861289978" x="210.702087402" height="125.128631592" width="219.28666687" id="rect1033-5" style="fill:#141414;stroke-width:0.1763888896;stroke-linejoin:round;paint-order:markers fill stroke" />
+<text id="text841" y="-66.344909668" x="210.33001709" style="font-size:4.2333335876px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;fill:#ffffff;stroke-width:0.1763889045;stroke-linejoin:round;paint-order:markers fill stroke" xml:space="preserve"><tspan y="-66.344909668" x="210.33001709" id="tspan839" sodipodi:role="line">DARK</tspan></text>
+<text id="text869-0" y="-45.6385116577" x="224.58581543" style="font-size:4.2333335876px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;fill:#ffffff;stroke-width:0.1763889045;stroke-linejoin:round;paint-order:markers fill stroke" xml:space="preserve"><tspan y="-45.6385116577" x="224.58581543" id="tspan867-0" sodipodi:role="line">256.256</tspan></text>
+<text id="text869-0-2" y="-45.6385116577" x="318.466003418" style="font-size:4.2333335876px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;fill:#ffffff;stroke-width:0.1763889045;stroke-linejoin:round;paint-order:markers fill stroke" xml:space="preserve"><tspan y="-45.6385116577" x="318.466003418" id="tspan867-0-7" sodipodi:role="line">128.128</tspan></text>
+<text id="text1015" y="-34.3496131897" x="367.087310791" style="font-size:4.2333335876px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;fill:#ffffff;stroke-width:0.1763889045;stroke-linejoin:round;paint-order:markers fill stroke" xml:space="preserve"><tspan y="-34.3496131897" x="367.087310791" id="tspan1013" sodipodi:role="line">64.64</tspan></text>
+<text id="text1023" y="-28.7051753998" x="393.254882812" style="font-size:4.2333335876px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;fill:#ffffff;stroke-width:0.1763889045;stroke-linejoin:round;paint-order:markers fill stroke" xml:space="preserve"><tspan y="-28.7051753998" x="393.254882812" id="tspan1021" sodipodi:role="line">32.32</tspan></text>
+<text id="text1031" y="-25.8829402924" x="408.071533203" style="font-size:4.2333335876px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;fill:#ffffff;stroke-width:0.1763889045;stroke-linejoin:round;paint-order:markers fill stroke" xml:space="preserve"><tspan y="-25.8829402924" x="408.071533203" id="tspan1029" sodipodi:role="line">16.16</tspan></text>
+<text id="text1011" y="10.805932045" x="318.404022217" style="font-size:4.2333335876px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;fill:#ffffff;stroke-width:0.1763889045;stroke-linejoin:round;paint-order:markers fill stroke" xml:space="preserve"><tspan y="10.805932045" x="318.404022217" id="tspan1009" sodipodi:role="line">96.96</tspan></text>
+<text id="text1019" y="19.272605896" x="355.777801514" style="font-size:4.2333335876px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;fill:#ffffff;stroke-width:0.1763889045;stroke-linejoin:round;paint-order:markers fill stroke" xml:space="preserve"><tspan y="19.272605896" x="355.777801514" id="tspan1017" sodipodi:role="line">48.48</tspan></text>
+<text id="text1027" y="23.5348739624" x="376.280273438" style="font-size:4.2333335876px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;fill:#ffffff;stroke-width:0.1763889045;stroke-linejoin:round;paint-order:markers fill stroke" xml:space="preserve"><tspan y="23.5348739624" x="376.280273438" id="tspan1025" sodipodi:role="line">24.24</tspan></text>
+<use style="stroke-width:1.25" height="100%" width="100%" transform="matrix(0.799999997144,0,0,0.799999997144,224.813166702,-71.2035216419)" id="use956" xlink:href="#g954" y="0" x="0" />
+<use style="stroke-width:3.3333332539" height="100%" width="100%" transform="matrix(0.299999998929,0,0,0.299999998929,318.652064419,3.44328629345)" id="use956-7" xlink:href="#g954" y="0" x="0" />
+<use style="stroke-width:2.5" height="100%" width="100%" transform="matrix(0.399999998572,0,0,0.399999998572,318.652033898,-56.6416233895)" id="use956-8" xlink:href="#g954" y="0" x="0" />
+<use style="stroke-width:20" height="100%" width="100%" transform="matrix(0.049999999822,0,0,0.049999999822,408.257563521,-24.1444005902)" id="use956-80" xlink:href="#g954" y="0" x="0" />
+<use style="stroke-width:13.3333330154" height="100%" width="100%" transform="matrix(0.074999999732,0,0,0.074999999732,376.507624947,24.3343512291)" id="use956-1" xlink:href="#g954" y="0" x="0" />
+<use style="stroke-width:6.6666665077" height="100%" width="100%" transform="matrix(0.149999999465,0,0,0.149999999465,356.046504561,17.3706729427)" id="use956-3" xlink:href="#g954" y="0" x="0" />
+<use style="stroke-width:5" height="100%" width="100%" transform="matrix(0.199999999286,0,0,0.199999999286,367.335352312,-38.0717872394)" id="use956-13" xlink:href="#g954" y="0" x="0" />
+<use style="stroke-width:10" height="100%" width="100%" transform="matrix(0.099999999643,0,0,0.099999999643,393.4409133,-28.7868733203)" id="use956-6" xlink:href="#g954" y="0" x="0" />
+</g>
+<g id="g1236" transform="translate(-16.6743030331,62.7861263063)">
+<rect style="fill:#fafafa;stroke-width:0.1763888896;stroke-linejoin:round;paint-order:markers fill stroke" id="rect1126" width="219.28666687" height="125.128631592" x="433.516540527" y="-62.7861289978" />
+<text xml:space="preserve" style="font-size:4.2333335876px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;fill:#000000;stroke-width:0.1763889045;stroke-linejoin:round;paint-order:markers fill stroke" x="447.400268555" y="-45.6385231018" id="text1130"><tspan sodipodi:role="line" id="tspan1128" x="447.400268555" y="-45.6385231018">256.256</tspan></text>
+<text xml:space="preserve" style="font-size:4.2333335876px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;fill:#000000;stroke-width:0.1763889045;stroke-linejoin:round;paint-order:markers fill stroke" x="541.280456543" y="-45.6385231018" id="text1134"><tspan sodipodi:role="line" id="tspan1132" x="541.280456543" y="-45.6385231018">128.128</tspan></text>
+<text xml:space="preserve" style="font-size:4.2333335876px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;fill:#000000;stroke-width:0.1763889045;stroke-linejoin:round;paint-order:markers fill stroke" x="589.901794434" y="-34.3496284485" id="text1138"><tspan sodipodi:role="line" id="tspan1136" x="589.901794434" y="-34.3496284485">64.64</tspan></text>
+<text xml:space="preserve" style="font-size:4.2333335876px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;fill:#000000;stroke-width:0.1763889045;stroke-linejoin:round;paint-order:markers fill stroke" x="616.069274902" y="-28.7051887512" id="text1142"><tspan sodipodi:role="line" id="tspan1140" x="616.069274902" y="-28.7051887512">32.32</tspan></text>
+<text xml:space="preserve" style="font-size:4.2333335876px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;fill:#000000;stroke-width:0.1763889045;stroke-linejoin:round;paint-order:markers fill stroke" x="630.885925293" y="-25.8829536438" id="text1146"><tspan sodipodi:role="line" id="tspan1144" x="630.885925293" y="-25.8829536438">16.16</tspan></text>
+<text xml:space="preserve" style="font-size:4.2333335876px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;fill:#000000;stroke-width:0.1763889045;stroke-linejoin:round;paint-order:markers fill stroke" x="541.218444824" y="10.805929184" id="text1150"><tspan sodipodi:role="line" id="tspan1148" x="541.218444824" y="10.805929184">96.96</tspan></text>
+<text xml:space="preserve" style="font-size:4.2333335876px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;fill:#000000;stroke-width:0.1763889045;stroke-linejoin:round;paint-order:markers fill stroke" x="578.592224121" y="19.2726039886" id="text1154"><tspan sodipodi:role="line" id="tspan1152" x="578.592224121" y="19.2726039886">48.48</tspan></text>
+<text xml:space="preserve" style="font-size:4.2333335876px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;fill:#000000;stroke-width:0.1763889045;stroke-linejoin:round;paint-order:markers fill stroke" x="599.094665527" y="23.5348720551" id="text1158"><tspan sodipodi:role="line" id="tspan1156" x="599.094665527" y="23.5348720551">24.24</tspan></text>
+<use x="0" y="0" xlink:href="#g954" id="use1160" transform="matrix(0.799999997144,0,0,0.799999997144,447.627616347,-71.2035217349)" width="100%" height="100%" style="stroke-width:1.25" />
+<use x="0" y="0" xlink:href="#g954" id="use1162" transform="matrix(0.299999998929,0,0,0.299999998929,541.466514064,3.44328619985)" width="100%" height="100%" style="stroke-width:3.3333332539" />
+<use x="0" y="0" xlink:href="#g954" id="use1164" transform="matrix(0.399999998572,0,0,0.399999998572,541.466483543,-56.6416234835)" width="100%" height="100%" style="stroke-width:2.5" />
+<use x="0" y="0" xlink:href="#g954" id="use1166" transform="matrix(0.049999999822,0,0,0.049999999822,631.072013166,-24.1444006838)" width="100%" height="100%" style="stroke-width:20" />
+<use x="0" y="0" xlink:href="#g954" id="use1168" transform="matrix(0.074999999732,0,0,0.074999999732,599.322074592,24.3343511349)" width="100%" height="100%" style="stroke-width:13.3333330154" />
+<use x="0" y="0" xlink:href="#g954" id="use1170" transform="matrix(0.149999999465,0,0,0.149999999465,578.860954206,17.3706728485)" width="100%" height="100%" style="stroke-width:6.6666665077" />
+<use x="0" y="0" xlink:href="#g954" id="use1172" transform="matrix(0.199999999286,0,0,0.199999999286,590.149801957,-38.0717873331)" width="100%" height="100%" style="stroke-width:5" />
+<use x="0" y="0" xlink:href="#g954" id="use1174" transform="matrix(0.099999999643,0,0,0.099999999643,616.255362945,-28.786873414)" width="100%" height="100%" style="stroke-width:10" />
+<text id="text1178" y="-66.344909668" x="433.144470215" style="font-size:4.2333335876px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;fill:#000000;stroke-width:0.1763889045;stroke-linejoin:round;paint-order:markers fill stroke" xml:space="preserve"><tspan y="-66.344909668" x="433.144470215" id="tspan1176" sodipodi:role="line">LIGHT</tspan></text>
+</g>
+<use x="0" y="0" xlink:href="#g954" id="use956-34" transform="translate(-2.23517417908e-8,-36.4047406959)" width="100%" height="100%" />
+<text xml:space="preserve" style="font-size:4.2333335876px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;fill:#ffffff;stroke-width:0.1763889045;stroke-linejoin:round;paint-order:markers fill stroke" x="-0.310058563948" y="-151.265136719" id="text845-4"><tspan sodipodi:role="line" id="tspan843-9" x="-0.310058563948" y="-151.265136719">GRID</tspan></text>
+</g>
+<g inkscape:label="Design" inkscape:groupmode="layer" id="layer1" transform="translate(0,-184.111120882)">
+<g id="g954" transform="translate(2.2351741292e-8,-147.706380186)">
+<circle r="56.4444465637" cy="240.55557251" cx="56.4444465637" id="path948" style="fill:#ffff01;stroke-width:0.1763889045;stroke-linejoin:round;paint-order:markers fill stroke" />
+<rect y="200.643310547" x="16.5321903229" height="79.8245010376" width="79.824508667" id="rect950" style="fill:#ff00ff;stroke-width:0.1763889045;stroke-linejoin:round;paint-order:markers fill stroke" />
+</g>
+</g>
+</svg>
